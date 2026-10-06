@@ -8,18 +8,6 @@ IINA plays the original file from your server: no transcoding, every audio and s
 
 > ⚠️ Experimental and vibe-coded: use it at your own risk!
 
-## How it works
-
-There are two small pieces, and you need both:
-
-| Piece | What it does |
-|---|---|
-| **Plex to IINA** (userscript, in your browser) | Adds an **▶ IINA** button to every film and episode page in Plex Web. Click it and IINA opens the file. The **eye** next to it turns Plex tracking on or off, and **▾** lets you pick a version (4K, 1080p…) |
-| **Plex Sync** (IINA plugin) | While IINA plays, reports the position to your Plex server, resumes where Plex left off, and marks the item as watched past 90 % |
-
-- 👁️ **Orange eye:** Plex records what IINA plays, as if you'd watched it in Plex.
-- 🙈 **Crossed-out eye:** IINA plays without telling Plex anything. Handy to check a file without touching your history.
-
 ## Install
 
 You'll need a Mac with IINA 1.4 or later, and Plex Web in a browser with a userscript manager (Brave, Chrome, Safari, Firefox…).
@@ -54,6 +42,18 @@ Nothing is sent anywhere except **your own Plex server**, and only for links ope
 **Permissions** (in `Info.json`): `network-request` and `show-osd` only. There's no `file-system`: the plugin can't read or write your files or run anything. `allowedDomains` is `*` because everyone's Plex server has a different address (local IP, `plex.direct`, your own domain…).
 
 The whole plugin is three readable files: [`Info.json`](Info.json), [`index.js`](index.js) and [`pref.html`](pref.html). The `.iinaplgz` is just those three zipped.
+
+## How it works
+
+There are two small pieces, and you need both:
+
+| Piece | What it does |
+|---|---|
+| **Plex to IINA** (userscript, in your browser) | Adds an **▶ IINA** button to every film and episode page in Plex Web. Click it and IINA opens the file. The **eye** next to it turns Plex tracking on or off, and **▾** lets you pick a version (4K, 1080p…) |
+| **Plex Sync** (IINA plugin) | While IINA plays, reports the position to your Plex server, resumes where Plex left off, and marks the item as watched past 90 % |
+
+- 👁️ **Orange eye:** Plex records what IINA plays, as if you'd watched it in Plex.
+- 🙈 **Crossed-out eye:** IINA plays without telling Plex anything. Handy to check a file without touching your history.
 
 ## Limitations
 
