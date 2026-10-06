@@ -1,6 +1,6 @@
 # Plex Sync for IINA ▶👁️
 
-Play your Plex films and episodes in [IINA](https://iina.io) straight from Plex Web, **and let Plex know what you watched**: progress, resume point, "Continue Watching", and marked as watched at the end.
+Play your Plex films and episodes in [IINA](https://github.com/iina/iina) straight from Plex Web, **and let Plex know what you watched**: progress, resume point, "Continue Watching", and marked as watched at the end.
 
 IINA plays the original file from your server: no transcoding, every audio and subtitle track, the native macOS player. An eye on the button decides whether Plex keeps track or not.
 
