@@ -1,0 +1,27 @@
+{
+  "name": "Plex Sync",
+  "identifier": "io.github.pyrodzeus.plex-sync",
+  "version": "1.0.0",
+  "description": "Tells your Plex server what IINA is playing: progress, resume point and watched status. Works with Plex links opened from Plex Web by the Plex to IINA userscript, with tracking switched on.",
+  "author": {
+    "name": "Pyro",
+    "url": "https://github.com/PyroDzeus/iina-plex-sync"
+  },
+  "entry": "index.js",
+  "permissions": [
+    "network-request",
+    "show-osd"
+  ],
+  "allowedDomains": [
+    "*"
+  ],
+  "preferencesPage": "pref.html",
+  "preferenceDefaults": {
+    "resume": true,
+    "osd": true,
+    "threshold": 90,
+    "interval": 10
+  },
+  "ghRepo": "PyroDzeus/iina-plex-sync",
+  "ghVersion": 1
+}
